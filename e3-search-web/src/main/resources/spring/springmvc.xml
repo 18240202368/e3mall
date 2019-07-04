@@ -12,7 +12,7 @@
 	<!-- 加载配置文件 -->
 	<context:property-placeholder location="classpath:conf/resource.properties" />
 	
-	<context:component-scan base-package="cn.e3mall.search.controller" />
+	<context:component-scan base-package="club.lyzmw.e3mall.search.controller" />
 	<mvc:annotation-driven />
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
