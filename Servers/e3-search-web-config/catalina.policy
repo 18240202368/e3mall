@@ -172,15 +172,6 @@ grant {
     permission java.lang.RuntimePermission
      "accessClassInPackage.org.apache.jasper.runtime.*";
 
-    // Precompiled JSPs need access to these system properties.
-
-    // The following two permissions are no longer needed since Tomcat 8.0.53
-    // They are here for historic reasons. There is no harm in keeping them.
-    permission java.util.PropertyPermission
-     "org.apache.jasper.runtime.BodyContentImpl.LIMIT_BUFFER", "read";
-    permission java.util.PropertyPermission
-     "org.apache.el.parser.COERCE_TO_ZERO", "read";
-
     // The cookie code needs these.
     permission java.util.PropertyPermission
      "org.apache.catalina.STRICT_SERVLET_COMPLIANCE", "read";
@@ -189,12 +180,13 @@ grant {
     permission java.util.PropertyPermission
      "org.apache.tomcat.util.http.ServerCookie.FWD_SLASH_IS_SEPARATOR", "read";
 
-    // Applications using Comet need to be able to access this package
-    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.catalina.comet";
-
     // Applications using WebSocket need to be able to access these packages
     permission java.lang.RuntimePermission "accessClassInPackage.org.apache.tomcat.websocket";
     permission java.lang.RuntimePermission "accessClassInPackage.org.apache.tomcat.websocket.server";
+
+    // Applications need to access these packages to use the Servlet 4.0 Preview
+    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.catalina.servlet4preview";
+    permission java.lang.RuntimePermission "accessClassInPackage.org.apache.catalina.servlet4preview.http";
 };
 
 

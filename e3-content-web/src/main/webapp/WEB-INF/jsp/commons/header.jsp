@@ -12,7 +12,7 @@
               <img src="/images/html/20160829181637762.gif">
             </a> 
         </div>
-		<a name="sfbest_hp_hp_head_logo" href="http://www.e3mall.cn" class="trackref logoleft">
+		<a name="sfbest_hp_hp_head_logo" href="http://www.lyzmw.club" class="trackref logoleft">
 		</a>
 		<div class="logo-text">
 			<img src="/images/html/logo_word.jpg">
@@ -20,7 +20,7 @@
 		</div>
     <div class="index_promo"></div>
     <div class="search">
-      <form action="http://localhost:8085/search.html" id="searchForm" name="query" method="GET">
+      <form action="http://localhost:8086/search.html" id="searchForm" name="query" method="GET">
         <input type="text" class="text keyword ac_input" name="keyword" id="keyword" value="" style="color: rgb(153, 153, 153);" onkeydown="javascript:if(event.keyCode==13) search_keys('searchForm');" autocomplete="off">
         <input type="button" value="" class="submit" onclick="search_keys('searchForm')">
       </form>
