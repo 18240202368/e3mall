@@ -6,5 +6,5 @@ import club.lyzmw.e3mall.pojo.TbUser;
 public interface RegisterService {
 	public E3Result register(TbUser user);
 
-	public E3Result checkData(String param, Integer type);
+	public E3Result checkData(String param, int type);
 }

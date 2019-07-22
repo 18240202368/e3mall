@@ -22,8 +22,7 @@ public class RegisterController {
 	private RegisterService registerService;
 	
 	@RequestMapping("/page/register")
-	public String showRegitster() {
-		
+	public String showRegitster() {		
 		return  "register";
 	}
 	@RequestMapping("/user/check/{param}/{type}")
