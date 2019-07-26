@@ -29,4 +29,5 @@
 	<!-- <dubbo:reference interface="club.lyzmw.e3mall.content.service.ContentService" id="contentService" /> -->
 	<dubbo:reference interface="club.lyzmw.e3mall.sso.service.RegisterService" id="registerService"/>
 	<dubbo:reference interface="club.lyzmw.e3mall.sso.service.LoginService" id="loginService"/>
+	<dubbo:reference interface="club.lyzmw.e3mall.sso.service.TokenService" id="tokenService"/>
 </beans>

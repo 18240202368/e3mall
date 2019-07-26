@@ -34,7 +34,7 @@ public class LoginController {
 		//判断是否登录成功
 		if(e3Result.getStatus() == 200) {
 			String token = e3Result.getData().toString();
-			CookieUtils.setCookie(request, response,TOKEN_KEY, token);
+			CookieUtils.setCookie(request, response,TOKEN_KEY, token,-1);
 		}
 		//返回结果
 		return e3Result;	
